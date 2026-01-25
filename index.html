@@ -230,14 +230,23 @@
 															</div>
 														</div>
 
-											</details>	
-										</article>
+										
 										<article>
-											<a href="https://github.com/BOON2G/Modbus-TCP-Engine.git" class="image"><img src="images/ModbusTCP.jpg" alt="" /></a>
+											<a href="images/ModbusTCP.jpg" class="image zoom-image">
+												<img src="images/ModbusTCP.jpg" alt="" />
+											</a>
+											
 											<div class="inner">
 												<h4>Modbus TCP/IP protocol using C#</h4>
 												<p>Register data and read using C#</p>
 											</div>
+										
+											<div style="clear: both; width: 100%; padding-top: 1em;">
+												<a href="https://github.com/BoonThu/Modbus-TCP-Engine.git" class="button small primary" target="_blank">
+													View Code
+												</a>
+											</div>
+										
 										</article>
 									</div>
 								</div>
@@ -270,8 +279,7 @@
 
 						
 
-					</div>
-
+				
 				<!-- Footer -->
 					<section id="footer">
 						<div class="container">
@@ -319,7 +327,9 @@
 					}
 					.lightbox-overlay.visible { opacity: 1; }
 					.lightbox-overlay img { 
-						height: 50vh; width: auto; /* You set this to 50vh */
+						/* FIXED: Changed 50vh to 85vh so the image is BIG */
+						height: 85vh; 
+						width: auto; 
 						box-shadow: 0 0 30px rgba(0,0,0,0.8); border: 2px solid white; 
 						border-radius: 4px; transform: scale(0.9); transition: transform 0.3s ease; 
 						max-width: 95vw; object-fit: contain; 
@@ -327,7 +337,7 @@
 					.lightbox-overlay.visible img { transform: scale(1); }
 				`;
 				document.head.appendChild(style);
-			
+
 				document.querySelectorAll('.zoom-image').forEach(link => {
 					link.addEventListener('click', function(e) {
 						e.preventDefault();
@@ -345,24 +355,32 @@
 					});
 				});
 			</script>
+
 			<style>
-				/* ... your existing button colors ... */
-			
+				
+
 				/* NEW: Only stretch the button on Mobile Phones */
 				@media screen and (max-width: 736px) {
-					details summary.button {
+					/* FIXED: Added 'a.button' so it affects your NEW button too */
+					details summary.button, 
+					a.button { 
 						display: block !important;    /* Forces it to be a block element */
-						width: 25% !important;       /* Forces full width */
+						
+						/* FIXED: 25% so it fills the width */
+						width: 25% !important;       
+						
 						text-align: center;           /* Centers the text */
 						margin-bottom: 1em;           /* Adds a little space below */
 					}
 				}
 			</style>
 
-</body> </html>
+
+
 	</body>
 
 </html>
+
 
 
 
