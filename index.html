@@ -64,28 +64,33 @@
 										<strong>PLC </strong> (Siemens TIA Portal) logic, and <br />
 										<strong>AutoCAD</strong> instrumentation layouts.<br />
 									</p>
-									<ul class="actions" style="display: flex; justify-content: center; width: 100%; margin-top: 2em; padding: 0;">
+									<ul class="actions">
 									    <li>
 									        <a href="images/Thu_CV2026.pdf" 
 									           class="button special" 
 									           target="_blank"
 									           style="background-color: #44c9b6 !important; 
-									                  color: #ffffff !important;
-									                  /* NEW: Auto width + padding makes it fit the text perfectly on all screens */
-									                  width: auto !important;
-									                  min-width: 200px; 
-									                  padding: 0 30px !important; 
+									                  color: #ffffff !important; 
 									                  
-									                  display: flex !important;            
-									                  justify-content: center !important;  
-									                  align-items: center !important;
-									                  margin: 0 auto;">             
+									                  /* 1. SHAPE: Fixed width, but safe for mobile */
+									                  width: 260px;
+									                  max-width: 100%;
+									                  
+									                  /* 2. ALIGNMENT: This locks text to the center */
+									                  display: inline-flex !important; 
+									                  justify-content: center !important; 
+									                  align-items: center !important; 
+									                  
+									                  /* 3. CLEANUP: No extra padding messing up the math */
+									                  padding: 0 !important;
+									                  height: 3.5em; 
+									                  line-height: normal !important;"> 
 									           
 									           <i class="icon fa-download" style="margin-right: 12px;"></i> 
 									           Download CV
 									        </a>
 									    </li>
-									</ul>	
+									</ul>
 								</div>
 							</section>
 
@@ -359,6 +364,7 @@
 	</body>
 
 </html>
+
 
 
 
