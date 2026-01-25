@@ -72,21 +72,21 @@
 									           style="background-color: #44c9b6 !important; 
 									                  color: #ffffff !important; 
 									                  
-									                  /* 1. SHAPE: Fixed width, but safe for mobile */
-									                  width: 260px;
-									                  max-width: 100%;
-									                  
-									                  /* 2. ALIGNMENT: This locks text to the center */
-									                  display: inline-flex !important; 
+									                  /* FORCE CENTER ALIGNMENT */
+									                  display: flex !important; 
 									                  justify-content: center !important; 
 									                  align-items: center !important; 
+									                  text-align: center !important;
+									
+									                  /* SIZE & SHAPE */
+									                  width: 260px; 
+									                  height: 3.5em; /* Standard button height */
 									                  
-									                  /* 3. CLEANUP: No extra padding messing up the math */
-									                  padding: 0 !important;
-									                  height: 3.5em; 
-									                  line-height: normal !important;"> 
+									                  /* REMOVE HIDDEN PADDING THAT SHIFTS TEXT */
+									                  padding: 0 !important; 
+									                  text-indent: 0 !important;"> 
 									           
-									           <i class="icon fa-download" style="margin-right: 12px;"></i> 
+									           <i class="icon fa-download" style="margin-right: 10px;"></i> 
 									           Download CV
 									        </a>
 									    </li>
@@ -364,6 +364,7 @@
 	</body>
 
 </html>
+
 
 
 
