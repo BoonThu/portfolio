@@ -65,33 +65,39 @@
 										<strong>AutoCAD</strong> instrumentation layouts.<br />
 									</p>
 									<ul class="actions">
-										    <li>
-										        <a href="images/Thu_CV2026.pdf" 
-										           class="button special" 
-										           target="_blank"
-										           style="background-color: #44c9b6 !important; 
-										                  color: #ffffff !important; 
-										                  
-										                  /* 1. FORCE THE SIZE */
-										                  width: 260px !important;
-										                  height: 3.5em !important;
-										                  
-										                  /* 2. FORCE THE CENTER ALIGNMENT */
-										                  display: flex !important; 
-										                  justify-content: center !important; 
-										                  align-items: center !important; 
-										                  
-										                  /* 3. REMOVE HIDDEN SPACING (The Mobile Fix) */
-										                  padding: 0 !important; 
-										                  margin: 0 !important;
-										                  text-indent: 0 !important;
-										                  box-sizing: border-box !important;"> 
-										           
-										           <i  style="margin-right: 12px;"></i> 
-										           Download CV
-										        </a>
-										    </li>
-										</ul>
+										<li>
+											<a href="images/Thu_CV2026.pdf" 
+											   class="button special" 
+											   target="_blank"
+											   style="background-color: #44c9b6 !important; 
+													  color: #ffffff !important; 
+													  
+													  /* 1. FORCE THE BOX SHAPE */
+													  width: 260px !important;
+													  max-width: 80vw !important; /* Prevents it from being too big on small phones */
+													  height: 3.5em !important;
+													  
+													  /* 2. FLEXBOX MAGIC (Centers everything) */
+													  display: flex !important; 
+													  justify-content: center !important; 
+													  align-items: center !important; 
+													  
+													  /* 3. RESET EVERYTHING ELSE */
+													  padding: 0 !important; 
+													  margin: 0 !important;
+													  text-align: center !important;
+													  box-sizing: border-box !important;"> 
+											   
+											   <i class="icon fa-download" 
+												  style="margin-right: -25px !important; 
+														 float: none !important; 
+														 line-height: normal !important;">
+											   </i> 
+											   
+											   <span style="line-height: normal !important;">Download CV</span>
+											</a>
+										</li>
+									</ul>
 								</div>
 							</section>
 
@@ -365,6 +371,7 @@
 	</body>
 
 </html>
+
 
 
 
